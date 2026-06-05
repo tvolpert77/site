@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>--PROJECT TITLE----</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<!-- FILE NAME HERE FOR THE PREV/NEXT FUNCTION-->
+<body data-project="">
+    <script>
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+
+    <header id="main-header">
+    </header>
+
+    <nav id="navbar"></nav>
+
+
+    <div class="container">
+        <section id="main">
+            <h1>--TITLE---</h1>
+            <p>---DATE---</p>
+
+            <div class="page-body">
+                <img src="images/image1.png">
+                <div class="page-description">
+                    <p>Text 1</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quidem.</p>
+              
+                </div>
+            </div>
+            <div class="project-image-below">
+                <hr>
+                <p>Extra pictures from the design process</p>
+                <img src="images/image1.png">
+            </div>
+
+            <div class="project-nav"></div>
+
+        </section>
+    </div>
+
+    <footer id="main-footer">
+    </footer>
+
+
+
+    <script src="js/dark-mode.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/prevnext.js"></script>
+
+</body>
+
+</html>

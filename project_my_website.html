@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website / Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<!-- FILE NAME HERE FOR THE PREV/NEXT FUNCTION-->
+
+<body data-project="project_my_website.html">
+    <script>
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+
+    <header id="main-header">
+    </header>
+
+    <nav id="navbar"></nav>
+
+
+    <div class="container">
+        <section id="main">
+            <h1>My Website / Portfolio</h1>
+            <p>July 2025</p>
+
+            <div class="page-body">
+                <img src="images/project_my_website_sc.png">
+                <div class="page-description">
+                    <p>This website itself was made entirely by me. I had very light experience with HTML and CSS from a
+                        class at NC State. I wanted to try and use that to make the website my own, rather than use
+                        something like Google Sites or Squarespace.</p>
+                    <p>To be fully honest I still feel like I do not know a lot, but just like everything else, this is
+                        experience for me. But, I plan on continually updating the site, such as adding more projects, pictures, UI, etc.</p>
+                    <p>Like a lot of things, it might not be perfect. But, it is mine.</p>
+
+                </div>
+            </div>
+            <div class="project-image-below">
+                <hr>
+                    <!--<p>Extra pictures from the design process</p>
+                <img src="images/image1.png"> -->
+            </div>
+
+            <div class="project-nav"></div>
+
+        </section>
+    </div>
+
+    <footer id="main-footer">
+    </footer>
+
+
+
+    <script src="js/dark-mode.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/prevnext.js"></script>
+
+</body>
+
+</html>

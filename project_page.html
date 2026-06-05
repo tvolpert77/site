@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project X - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1><a href="index.html">MY NAME | Portfolio</a></h1>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+            <button id="mode-toggle">🌙 Dark Mode</button>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="main">
+            <h1>Project X</h1>
+
+            <img src="images/image1.png" alt="Project X full view"
+                style="width:100%; max-width:600px; border-radius: 8px;">
+            <p>This project was a custom design I created and 3D printed myself using Fusion 360. It taught me skills
+                like parametr8ic modeling and tolerancing.</p>
+            <p>Technologies used: Fusion 360, PLA filament, Ender 3 Pro, Cura slicer.</p>
+        </section>
+        <div class="project-nav">
+            <a href="project-x.html" class="nav-btn">⬅️ Previous</a>
+            <a href="project-y.html" class="nav-btn">Next ➡️</a>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2025 MY NAME | All rights reserved</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("mode-toggle");
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            // Optional: Change button icon/text
+            if (document.body.classList.contains("dark-mode")) {
+                toggle.textContent = "☀️ Light Mode";
+            } else {
+                toggle.textContent = "🌙 Dark Mode";
+            }
+        });
+    </script>
+</body>
+
+</html>

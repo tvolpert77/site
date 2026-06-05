@@ -1,0 +1,388 @@
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    line-height: 1.6em;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Flex layout only for page-wrapper, not body */
+#page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    flex: 1;
+}
+
+
+#main-header {
+    background-color: #690081;
+    color: #121212;
+    padding: 1rem 0;
+}
+
+#main-header h1 {
+    font-size: 2rem;
+    margin: .5;
+}
+
+
+#main-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+#navbar li {
+    margin: 0;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+
+#main {
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+/* #main img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    border-radius: 8px;
+} */
+
+
+#main-footer {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+#project-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* always 3 columns */
+    gap: 1.5rem;
+
+
+}
+
+.project {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-link:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    transition: all 0.2s ease-in-out;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+
+.page-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+.page-body img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.page-description {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-image-below {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.project-image-below img {
+    max-width: 49%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Responsive layout for small screens */
+@media (max-width: 1080px) {
+    .page-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-body img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .page-description {
+        width: 100%;
+    }
+}
+
+
+/* CONTACT PAGE STYLING */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 1.5rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* Responsive layout: stack vertically on small screens */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+
+.project-detail-section {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-detail-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.project-detail-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-text {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+
+.project-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: .5rem 0;
+}
+
+.nav-btn {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    min-width: 60px;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background-color: #4d0060;
+}
+
+@media (max-width: 768px) {
+    .project-detail-section {
+        flex-direction: column;
+    }
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 1080px) {
+    #projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.hp {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+
+:root {
+    --bg-color: #e6e6e6;
+    /* Light gray background */
+    --text-color: #333333;
+    /* Dark text for readability */
+    --card-bg: #d9d9d9;
+    /* Slightly darker gray for project boxes */
+    --card-border: #bfbfbf;
+    /* Mid-gray border around cards */
+    --header-bg: #300041;
+    --navbar-bg: #444444;
+    /* Slightly darker navbar */
+    --footer-bg: #e6e6e6;
+}
+
+
+/* Adjust other elements to use variables */
+#main-header {
+    background-color: var(--header-bg);
+}
+
+#navbar {
+    background-color: var(--navbar-bg);
+}
+
+#main-footer {
+    background-color: var(--footer-bg);
+}
+
+.project {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+}
+
+/* Dark mode overrides */
+body.dark-mode,
+html.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --card-border: #444;
+    --header-bg: #330041;
+    --navbar-bg: #1a1a1a;
+    --footer-bg: #121212;
+}
+
+#mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

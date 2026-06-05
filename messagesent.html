@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Message Sent</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+
+    <div id="page-wrapper">
+        <header id="main-header">
+        </header>
+
+        <nav id="navbar"></nav>
+
+        <div class="container">
+            <section id="main" class="message-confirmation">
+                <h1>Thank You!</h1>
+                <p>Your message has been sent successfully. I’ll get back to you as soon as possible.</p>
+                <a href="/" class="button">Return to Home</a>
+            </section>
+        </div>
+
+        <footer id="main-footer">
+        </footer>
+
+        <script src="js/dark-mode.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/layout.js"></script>
+    </div>
+</body>
+
+</html>

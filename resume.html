@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tyler Volpert Resume Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+    <script>
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+
+    <header id="main-header">
+    </header>
+
+    <nav id="navbar"></nav>
+
+
+    <div class="container">
+        <section id="main">
+            <h1>My Resume</h1>
+            <p>I am currently a CAD Engineer / Draftsman at <a href="https://www.ctsaw.com" target=_blank> Connecticut
+                    Saw and Tool</a> and am not looking for new
+                opportunities.
+            </p>
+            <p><a href="#" id="resumeLink" data-pdf="images/resumeDec2025_web.pdf">Clicking this </a>
+                will display my resume in
+                a new tab, except
+                if you are a robot... then it's not supposed to work.
+            </p>
+            <hr>
+            <p>Looking to work with me? <a href="contact.html">Email me here.</a></p>
+
+            <img src="images/resume_sc.png" alt="Picture with cooperating teacher"
+                style="width:100%; max-width:600px; border-radius: 8px;"> <!--yeah ik you shouldn't do this but idc-->
+        </section>
+    </div>
+
+    <footer id="main-footer">
+    </footer>
+
+    <script src="js/dark-mode.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const resumeLink = document.getElementById("resumeLink");
+            resumeLink.addEventListener("click", function (e) {
+                e.preventDefault();
+                const file = resumeLink.getAttribute("data-pdf");
+                window.open(file, "_blank", "noopener");
+            });
+        });
+    </script>
+    <script src="js/layout.js"></script>
+
+
+</body>
+
+</html>

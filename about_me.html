@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+    <script>
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <div id="page-wrapper">
+        <header id="main-header">
+                    </header>
+
+        <nav id="navbar"></nav>
+
+        <div class="container">
+            <section id="main">
+                <h1>Hello there.</h1>
+                <p>Technology | Engineering | Design</p>
+
+                <div class="page-body">
+                    <img src="images/about_me_sc1.png" alt="A photo of me">
+                    <div class="page-description">
+                        <p>I am a designer / engineer that loves making and doing</p>
+                        <p>I enjoy hands-on work and working with CAD software</p>
+                        <hr>
+                        <p>Take a look at my <a href="resume.html">resume</a> for more information. Or, you could always
+                            <a href="contact.html">contact me here.</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer id="main-footer">
+        </footer>
+
+        <script src="js/dark-mode.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/layout.js"></script>
+    </div>
+</body>
+
+</html>

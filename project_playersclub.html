@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Player's Club</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<!-- FILE NAME HERE FOR THE PREV/NEXT FUNCTION-->
+
+<body data-project="project_playersclub.html">
+    <script>
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+
+    <header id="main-header">
+    </header>
+
+    <nav id="navbar"></nav>
+
+
+    <div class="container">
+        <section id="main">
+            <h1>The Player's Club Playground Model</h1>
+            <p>November 2024</p>
+
+            <div class="page-body">
+                <img src="images/playersclub_sc.png">
+                <div class="page-description">
+                    <p>In my "Research & Development in Technology Education" class at NC State, all students were tasked with
+                        designing a playground that has at least three features (while also promoting accessibility).
+                    </p>
+                    <p>I have ZERO interest in playground design. I was also really enjoying using my 3D printer. I was
+                        going to use this as an opportunity to have a little bit of fun.</p>
+                    <p>Behold, my 100% 3D printed casino themed playground (consider looking at the documentation linked below).</p>
+                </div>
+            </div>
+            <div class="project-image-below">
+                <hr>
+                <a href="images/playersclub_log.pdf" target=_blank>Documentation</a>
+            </div>
+
+            <div class="project-nav"></div>
+
+        </section>
+    </div>
+
+    <footer id="main-footer">
+    </footer>
+
+
+
+    <script src="js/dark-mode.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/prevnext.js"></script>
+
+</body>
+
+</html>

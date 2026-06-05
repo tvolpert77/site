@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tyler Volpert | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <script>
+        //Stops screen flash from dark mode toggle
+        if (localStorage.getItem("dark-mode") === "enabled") {
+            document.body.classList.add("dark-mode");
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+
+    <div id="page-wrapper">
+        <header id="main-header">
+        </header>
+
+        <!--Nav bar at the top of the website-->
+        <nav id="navbar"></nav>
+
+
+        <div class="container">
+            <section id="main">
+                <h1>Projects</h1>
+                <p>This is my showcase of any project that I find worth sharing. Some of it is my own original work,
+                    while some of it
+                    is also 3D printed models made by someone else (fabrications). If you see something it's because I
+                    either learned
+                    something valuable from it, or I think it's cool, or both.</p>
+
+                <div id="project-controls">
+                    <label for="filter">Filter:</label>
+                    <select id="filter" onchange="filterProjects()">
+                        <option value="all">All</option>
+                        <option value="original">Original Work</option>
+                        <option value="fabrication">Fabrications</option>
+                    </select>
+                </div>
+
+                <div id="projects-grid" data-project-source="true">
+
+
+                    <!-- List of projects-->
+
+                    <!-- <a href="project_business_card.html" class="project original project-link">
+                        <div>
+                            <img src="images/business_card_sc.png" alt="Business Card">
+                            <h3>3D Printed Business Card</h3>
+                            <p></p>
+                        </div>
+                    </a> -->
+
+                    <a href="project_crucible.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/crucible/crucible_sc.png" alt="The Crucible">
+                            <h3>The Crucible</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_gunstand.html" class="project original project-link">
+                        <div>
+                            <img src="images/gun_stand/gunstand_sc.png" alt="Custom Firearm Display Stand">
+                            <h3>Custom Firearm Display Stand</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_prime_vandal.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/prime_vandal/prime_vandal_sc.png" alt="Prime Vandal">
+                            <h3>Prime Vandal</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_fatebringer.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/fatebringer_sc.png" alt="Fatebringer">
+                            <h3>Fatebringer</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_keychains.html" class="project original project-link">
+                        <div>
+                            <img src="images/project_keychains_sc.png" alt="Custom Keychains">
+                            <h3>Custom Keychains</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_coasters.html" class="project original project-link">
+                        <div>
+                            <img src="images/project_coasters_sc.png" alt="Custom Coasters">
+                            <h3>Custom Drink Coasters</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_my_website.html" class="project original project-link">
+                        <div>
+                            <img src="images/project_my_website_sc.png" alt="My Website">
+                            <h3>My Website / Portfolio</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_toploader_sleeveholder.html" class="project original project-link">
+                        <div>
+                            <img src="images/project_toploader_sleeve_holder_sc.png" alt="Toploader and Sleeve Holder">
+                            <h3>Toploader and Sleeve Holder for Cards</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_surge.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/surge_sc.png" alt="Surge from Brawl Stars">
+                            <h3>Surge</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_college_logos.html" class="project original project-link">
+                        <div>
+                            <img src="images/college_logos_sc.png" alt="Quinnipiac University Logo">
+                            <h3>Customized College Logos</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_reaver_sheriff.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/reaver_sheriff_sc.png" alt="Reaver Sheriff">
+                            <h3>Reaver Sheriff</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_wavegun.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/wavegun_sc.png" alt="Wave Gun">
+                            <h3>Wave Gun (Zap Gun Dual Wield)</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_raygun_mark2.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/raygun_mark2_sc.png" alt="Ray Gun Mark II">
+                            <h3>Ray Gun Mark II</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <!---- <a href="project_spectrum_classic.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/spectrum_classic_sc.png" alt="Spectrum Classic">
+                            <h3>Spectrum Classic from "VALORANT"</h3>
+                            <p></p>
+                        </div>
+                    </a> -->
+
+                    <a href="project_playersclub.html" class="project original project-link">
+                        <div>
+                            <img src="images/playersclub_sc.png" alt="Casino Playground Model">
+                            <h3>The Player's Club Playground Model</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_blundergat.html" class="project fabrication project-link">
+                        <div>
+                            <img src="images/blundergat_sc.png" alt="Blundergat">
+                            <h3>Blundergat</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+
+
+                    <a href="project_southern_voice_logo.html" class="project original project-link">
+                        <div>
+                            <img src="images/southern_voice_logo_sc.png" alt="Southern Voice Band Logo">
+                            <h3>Southern Voice Band Branding</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_thunderfist_energy.html" class="project original project-link">
+                        <div>
+                            <img src="images/thunderfist_energy_sc.png" alt="Thunderfist Energy">
+                            <h3>Thunderfist Energy</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+                    <a href="project_vectorartsign.html" class="project original project-link">
+                        <div>
+                            <img src="images/vectorartsign_sc.png" alt="Vector Art Sign">
+                            <h3>Vector Art Sign</h3>
+                            <p></p>
+                        </div>
+                    </a>
+
+
+
+
+
+
+            </section>
+        </div>
+
+        <footer id="main-footer">
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const projects = document.querySelectorAll(".project.project-link");
+                projects.forEach((el, index) => {
+                    const baseName = el.getAttribute("href").replace("project_", "").replace(".html", "");
+                    el.dataset.id = baseName || `project-${index + 1}`;
+                });
+            });
+        </script>
+
+        <script>
+            function filterProjects() {
+                const value = document.getElementById("filter").value;
+                const projects = document.querySelectorAll(".project");
+
+                projects.forEach(proj => {
+                    if (value === "all" || proj.classList.contains(value)) {
+                        proj.style.display = "block";
+                    } else {
+                        proj.style.display = "none";
+                    }
+                });
+            }
+        </script>
+
+
+        <script src="js/dark-mode.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/layout.js"></script>
+    </div>
+</body>
+
+</html>
